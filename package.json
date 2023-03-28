@@ -2,11 +2,14 @@
   "name": "react-typescript-todo",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://endertle.github.io/react-typescript-todo/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.2.0",
